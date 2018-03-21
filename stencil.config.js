@@ -1,5 +1,5 @@
 exports.config = {
-  namespace: 'mycomponent',
+  namespace: 'capacitorgooglemaps',
   generateDistribution: true,
   serviceWorker: false
 };

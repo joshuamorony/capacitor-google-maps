@@ -20,31 +20,30 @@ declare global {
 
 
 import {
-  MyComponent as MyComponent
-} from './components/my-component/my-component';
+  CapacitorGoogleMaps as CapacitorGoogleMaps
+} from './components/capacitor-google-maps/capacitor-google-maps';
 
 declare global {
-  interface HTMLMyComponentElement extends MyComponent, HTMLStencilElement {
+  interface HTMLCapacitorGoogleMapsElement extends CapacitorGoogleMaps, HTMLStencilElement {
   }
-  var HTMLMyComponentElement: {
-    prototype: HTMLMyComponentElement;
-    new (): HTMLMyComponentElement;
+  var HTMLCapacitorGoogleMapsElement: {
+    prototype: HTMLCapacitorGoogleMapsElement;
+    new (): HTMLCapacitorGoogleMapsElement;
   };
   interface HTMLElementTagNameMap {
-    "my-component": HTMLMyComponentElement;
+    "capacitor-google-maps": HTMLCapacitorGoogleMapsElement;
   }
   interface ElementTagNameMap {
-    "my-component": HTMLMyComponentElement;
+    "capacitor-google-maps": HTMLCapacitorGoogleMapsElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "my-component": JSXElements.MyComponentAttributes;
+      "capacitor-google-maps": JSXElements.CapacitorGoogleMapsAttributes;
     }
   }
   namespace JSXElements {
-    export interface MyComponentAttributes extends HTMLAttributes {
-      first?: string;
-      last?: string;
+    export interface CapacitorGoogleMapsAttributes extends HTMLAttributes {
+      apikey?: string;
     }
   }
 }
